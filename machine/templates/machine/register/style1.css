@@ -1,0 +1,121 @@
+ h1
+{
+
+     background: white;
+
+     color:black;
+
+     font-size:60px;
+
+     text-align:center;
+
+     font-family:verdana;
+
+     margin:0px;
+
+   }
+ 
+   
+  ul
+     {
+
+      list-style:none;
+
+        padding:50px;
+
+        margin:5px 0px 0px 0px;
+
+     }
+ 
+
+ ul li
+      {
+ 
+        font-family:verdana;
+
+        font-size:25px;
+ 
+        float:left;
+   
+        width:200px;
+   
+        text-align:center;
+
+        padding:10px;
+  
+      }
+
+   
+   ul li a
+          {
+ 
+           text-decoration:underline;
+ 
+           display:block;
+       
+           color:white;
+       
+           background:red;
+    
+           padding:10px;
+    
+          }
+     
+ ul li a:hover 
+     {
+  
+        color:white;
+
+        background:green;
+
+      }
+     
+      
+ .txt  
+     {
+
+        width:500px;
+        margin:150px;
+  
+        background:lightgray;
+  
+        padding:20px;
+        
+        border:dotted white;
+   
+     }
+     
+.para1 
+    {
+      
+      font-family:verdana;
+  
+      font-size:15px;
+       
+      text-indent:100px;
+     
+      text-align:justify;
+    
+      color:red;
+   
+  }
+  
+
+   .crs 
+      {
+ 
+       font-family:arial black;
+
+        font-size:25px;
+       
+        text-decoration:underline;
+ 
+      }
+  
+   h4 {
+     
+      color:blue;
+
+      font-family:verdana;
+ 
+    }		

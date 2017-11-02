@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Financial Assistance</title>
+		<meta charset="utf-8" />
+		{% load staticfiles %}
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static '/css/main.css' %}" type='text/css' />
+		
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+
+			<header id="header">
+
+				<div class="inner">
+					<a href="index.html" class="logo"><strong></strong></a>
+
+					<nav id="nav">
+						<h1 align="left"> Welcome <font size="5"> {{ user.username }} </font> </h1>
+						<a href="index.html">Home</a>
+						<a href="plan.html">Plan</a>
+						<a href="/profiles/">Profile</a>
+						<a href="/logout/">Log Out</a>
+						
+						<a href="">Contact</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome To Financial Assistance</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<a href="/realestate/"><span class="icon fa fa-home"></span></a>
+							<h3>Real Estate</h3>
+							<p>Dealing With Properties</p>
+						</div>
+
+						<div>
+							<a href="/insurance/"><span class="icon fa fa-file-text"></span></a>
+							<h3>Insurance</h3>
+							<p>Safeguard your life</p>
+						</div>
+
+
+						
+
+						<div>
+							<a href="/mutualfund/"> <span class="icon fa fa-group"></span></a>
+							<h3>Mutual FUND</h3>
+							<p>Secured Investments</p>
+						</div>
+                        
+					</div>
+					<div class="inner1" >
+					
+
+					<div class="flex ">
+
+						<div>
+							<a href="/fixeddeposit/"><span class="icon fa fa-inr"></span></a>
+							<h3>Fixed Deposit</h3>
+							<p>Never lose money</p>
+						</div>
+
+						<div>
+							<a href="."> <span class="icon fa fa-circle-o"></span></a>
+							<h3>Gold</h3>
+							<p>Wealth With Gold</p>
+						</div>
+						
+						<div>
+							<a href="/stockmarket/"><span class="icon fa fa-line-chart"></span></a>
+							<h3>Stock Market</h3>
+							<p>World of shares</p>
+						</div>
+                        
+					</div>
+
+			
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="{% static '/images/images1.jpg' %}" alt="Pic 01" />
+							</div>
+							
+							<p id="p1"><b>Savings is more important thing in one’s life, but most of them do not know how to effectively save money and to invest on something which gives more returns.  Therefore we intent to create a Financial Assistance System which gives a proper guidance about the financial investment options. In Financial Assistance System the user will give their details with their earning and how much they can save for a period of time and their investment preferences. Financial Assistance System analyse all the information given by the user and find out the suitable investment for the people.</b></p>
+							
+						</article>
+						<article>
+							<div class="image round">
+								<img src="{% static '/images/download2.jpg' %}" alt="Pic 02" />
+							</div>
+							
+							<p><b>In this system machine learning technology is used to analyse and predict the suitable investment option for a particular person. This system will give a proper idea about the investment and the future returns and the risk involved to the user. It guide the person for a better financial future. By using this system one can organize their financial life. The user will get best investment option currently available in the market.  We hope that by creating Financial Assistance System many people will be having better financial future.</b></p>
+							
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>CONTACT</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+				
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static '/js/jquery.min.js' %}"></script>
+			
+			<script src="{% static '/js/skel.min.js' %}"></script>
+			<script src="{% static '/js/util.js' %}"></script>
+			<script src="{% static '/js/main.js' %}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Login Up</title>
+	</head>
+	<body background="payroll-lg1.jpg">
+	<h1 align="center">Log In</h1>
+    <pre>
+	<form action="loginjs.js" method="post" align="center">
+	  Email   : <input type="text" name="email" id="email"><br>
+	  Password: <input type="Password" id="password" name="password"><br>
+	 <button type="button"  name="login" id="login">Login</button> 
+	</form>
+	</pre>
+
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyD6dkzIUdUAV3y4R4CzVNSevrPatlystb8",
+	    authDomain: "financal-assistance.firebaseapp.com",
+	    databaseURL: "https://financal-assistance.firebaseio.com",
+	    projectId: "financal-assistance",
+	    storageBucket: "financal-assistance.appspot.com",
+	    messagingSenderId: "373962284760"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script type="text/javascript" src="loginjs.js"></script>
+	</body>
+</html>
