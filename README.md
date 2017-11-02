@@ -1,6 +1,7 @@
 # Financial-assistance
+<pre>
 FINANCIAL ASSISTANCE USING MACHINE LEARNING (SCIKIT-LEARN):<br>
-    This project assist the financial options by using machine learning algorithm support vector machine
+    This project assist the financial options by using machine learning algorithm support vector machine<br>
     
     Financial Assistance System the user will give their details with their earning and how much they can save for a period of time and their investment preferences. Financial Assistance System analyse all the information given by the user and find out the suitable investment for the people.
     In this system machine learning technology is used to analyse and predict the suitable investment option for a particular person. This system will give a proper idea about the investment and the future returns and the risk involved to the user.
@@ -27,5 +28,5 @@ WORKING:
       5) In realestate calculate the loan potential, interest, total.
       6) Filter according to the area type.
       7) Logout.
-      
+ </pre>
   
