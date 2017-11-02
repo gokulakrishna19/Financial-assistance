@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>FIXED DEPOSIT - Financial Assistance</title>
+		<meta charset="utf-8" />
+		{% load staticfiles %}
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static '/css/main.css' %}" type='text/css' />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+body, html {
+    height: 80%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("{% static '/images/fixed-deposit.jpg' %}");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Financial Assistance</strong> </a>
+					<nav id="nav">
+						<a href="/machine/index.html">Home</a>
+						<a href="/machine/plan.html">Plan</a>
+						<a href="/profiles/">Profile</a>
+						<a href="/logout/">Log Out</a>
+						
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+			<div class="bg">
+       
+			 <!-- Three -->
+				<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+				
+					</header>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<br>
+					<br>
+				
+					
+					
+					<div class="image round left">
+						<img src="{% static '/images/fix1.jpg' %}" alt="Pic 01" style="width:200px;height:220px;" />
+					</div>
+					<br><p><font color="#000000">A fixed deposit (FD) is a financial instrument provided by banks or NBFCs which provides investors with a higher rate of interest than a regular savings account, until the given maturity date. It may or may not require the creation of a separate account. It is known as a term deposit or time deposit in Canada, Australia, New Zealand, and the US, and as a bond in the United Kingdom and India. They are considered to be very safe investments. Term deposits in India and Pakistan is used to denote a larger class of investments with varying levels of liquidity. The defining criteria for a fixed deposit is that the money cannot be withdrawn from the FD as compared to a recurring deposit or a demand deposit before maturity. Some banks may offer additional services to FD holders such as loans against FD certificates at competitive interest rates.These investments are safer than Post Office Schemes as they are covered by the Deposit Insurance and Credit Guarantee Corporation (DICGC). However, DICGC guarantees amount up to ₹ 1,00,000 (about $1555) per depositor per bank.[3] They also offer income tax and wealth tax benefits.</font></p>
+				</div>	
+				</div>
+			</section>
+			
+			
+			<div class="w3-container w3-vertical-align">
+			<br>
+			
+			
+			<p style="padding-left: 20%; padding-right: 20%"><font size="5" >*Risk:0% </font></p>
+			 {% for inv in invest %}
+			 	 {% for p in plan %}
+			 	 	{% if inv == p.id %}
+		 	
+					  <div class="w3-panel w3-green w3-card" style="width:60%; margin-left:20%">
+					  
+					  <div class ="w3-container" > <p><h3><font color="#000000">
+					  	
+					  		<h1><font color="#000000">{{ p.bank }}</font></h1>  Duration:{{p.min_duration}}-{{p.max_duration}} days<br>
+					  		
+					  		Interest:{{p.interest}}% <br>
+					  	
+
+
+						
+
+						</font></h3></p></div>
+					  
+						
+						
+						  
+					</div>
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+			
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>CONTACT</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+				
+
+				</div>
+			</footer>
+      
+			
+
+		
+
+		<!-- Scripts -->
+			<script src="{% static '/js/jquery.min.js' %}"></script>
+			
+			<script src="{% static '/js/skel.min.js' %}"></script>
+			<script src="{% static '/js/util.js' %}"></script>
+			<script src="{% static '/js/main.js' %}"></script>
+			<!--<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/skel.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>-->           
+
+	</body>
+</html>
