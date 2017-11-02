@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Stock market - Financial Assistance</title>
+		<meta charset="utf-8" />
+		{% load staticfiles %}
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static '/css/main.css' %}" type='text/css' />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+body, html {
+    height: 85%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("{% static '/images/stock.jpg' %}");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Financial Assistance</strong> </a>
+					<nav id="nav">
+						<a href="/machine/index.html">Home</a>
+						<a href="/machine/plan.html">Plan</a>
+						<a href="/profiles/">Profile</a>
+						<a href="/logout/">Log Out</a>
+						
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+			<div class="bg">
+              <br>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+		<!-- Three -->
+				<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2><font color="#000000">Stock market</font></h2>
+						<p><font color="#000000">World of shares</font></p>
+					</header>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					
+					<div class="image round left">
+						<img src="{% static '/images/stocks.jpg' %}" alt="Pic 01" style="width:220px;height:240px;"  />
+					</div>
+					<br>
+					<br>
+					<br><p><font color="#000000">A stock market, equity market or share market is the aggregation of buyers and sellers (a loose network of economic transactions, not a physical facility or discrete entity) of stocks (also called shares), which represent ownership claims on businesses; these may include securities listed on a public stock exchange as well as those only traded privately. Examples of the latter include shares of private companies which are sold to investors through equity crowdfunding platforms. Stock exchanges list shares of common equity as well as other security types, e.g. corporate bonds and convertible bonds.</font> </p>
+				</div>	
+				</div>
+			</section>
+			
+			
+		
+			
+			
+			<div class="w3-container w3-vertical-align">
+			  {% for inv in invest %}
+				    {% if inv != 'ABC'  %}
+					    {% for p in plan %}
+					 	 	{% if inv == p.ticker %}
+
+							  <div class="w3-panel w3-green w3-card" style="width:60%; margin-left:20%">
+							  <div class ="w3-container" > <p><h1><font color="#000000">
+							  	{{ p.company }}({{ inv }})
+							  	
+							  </font></h1></p></div>
+							  <div class ="w3-container w3-center">
+									<a href="https://finance.yahoo.com/quote/{{ inv }}/chart?p={{ inv }}" target="_blank" class="w3-button w3-small w3-white w3-border w3-round-small" style="margin-bottom:10px">Details</a></div>
+								</div>
+								
+								
+								  
+								</div>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+			  {% endfor %}
+			  
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>CONTACT</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+				
+
+				</div>
+			</footer>
+      
+			
+
+		
+
+		<!-- Scripts -->
+			<script src="{% static '/js/jquery.min.js' %}"></script>
+			
+			<script src="{% static '/js/skel.min.js' %}"></script>
+			<script src="{% static '/js/util.js' %}"></script>
+			<script src="{% static '/js/main.js' %}"></script>
+
+	</body>
+</html>
