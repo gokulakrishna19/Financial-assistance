@@ -22,6 +22,6 @@ WORKING:
       4) Browse the plan according to the module.
       5) In realestate calculate the loan potential, interest, total.
       6) Filter according to the area type.
-      7) Logout.
+      7) Logout. 
  </pre>
   
